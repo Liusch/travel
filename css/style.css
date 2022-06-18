@@ -91,7 +91,7 @@ body {
 }
 
 .header__container {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -166,6 +166,7 @@ body {
 }
 
 .header__link {
+  color: #212832;
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 17px;
@@ -198,6 +199,10 @@ body {
   transition: 0.5s ease-in-out;
 }
 
+.header__language-link {
+  color: #212832;
+}
+
 .header__language li a {
   padding: 3px;
 }
@@ -220,7 +225,7 @@ body {
   position: relative;
   min-height: 100vh;
   background: url(../img/intro-decore1.png) no-repeat;
-  background-position: 1050px -60px;
+  background-position: 736px 0px;
 }
 
 .intro__container {
@@ -232,6 +237,8 @@ body {
 .intro__block {
   padding: 137px 28px;
   max-width: 50%;
+  background: url(../../img/intro-decore2.png) no-repeat;
+  background-position: 273px 260px;
 }
 
 .intro__title {
@@ -269,8 +276,9 @@ body {
   position: absolute;
   top: 24px;
   right: -29px;
+  max-width: 66%;
 }
 
 .intro__image-pic {
-  float: left;
+  max-width: 100%;
 }
