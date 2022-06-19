@@ -9,13 +9,25 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+.decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ellipse {
+  fill: #d5aee4;
+  background: #d5aee4;
+  opacity: 0.3;
+  filter: blur(150px);
+}
+
 //*header start----------------
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 47px;
+  padding-top: 49px;
   z-index: 9;
 }
 .header__container {
@@ -32,7 +44,7 @@ body {
   max-height: 35px;
 }
 .header__nav {
-  padding-top: 6px;
+  padding-top: 4px;
   max-width: 828px;
 }
 .header__list {
@@ -128,6 +140,7 @@ body {
   background: url(../img/intro-decore1.png) no-repeat;
   background-position: 736px 0px;
 }
+
 .intro__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -136,10 +149,10 @@ body {
 .intro__wrapper {
 }
 .intro__block {
-  padding: 137px 28px;
+  padding: 138px 28px;
   max-width: 50%;
   background: url(../../img/intro-decore2.png) no-repeat;
-  background-position: 273px 260px;
+  background-position: 273px 261px;
 }
 .intro__title {
   margin-bottom: 26px;
@@ -162,7 +175,7 @@ body {
   color: #181e4b;
 }
 .intro__text {
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   max-width: 477px;
   font-weight: 500;
   font-size: 16px;
@@ -170,14 +183,43 @@ body {
   color: #5e6282;
 }
 .intro__buttons {
+  display: flex;
+  align-items: baseline;
 }
 .intro__btn-find {
+  display: block;
+  margin-right: 118px;
+  padding: 19px 24px 16px;
+  border-radius: 10px;
+  background-color: #f1a501;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
 }
 .intro__btn-demo {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #686d77;
+  position: relative;
+  &::before {
+    content: url(../../img/icons/play-icon.svg);
+    background-color: #df6951;
+    padding: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 .intro__image {
   position: absolute;
-  top: 24px;
+  top: 26px;
   right: -29px;
   max-width: 66%;
 }
