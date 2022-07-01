@@ -220,7 +220,7 @@ body {
     color: #ff0000;
   }
   &::before {
-    content: url(../../img/icons/play-icon.svg);
+    content: url(../img/icons/play-icon.svg);
     width: 15px;
     height: 15px;
     background-color: #df6951;
@@ -408,7 +408,7 @@ body {
 //*category end-------------------
 //*topsell start------------------
 .topsell {
-  margin-bottom: 200px;
+  margin-bottom: 185px;
 }
 .topsell__container {
   max-width: 1102px;
@@ -460,7 +460,6 @@ body {
   &:hover {
     border-radius: 28px;
     box-shadow: 0 0px 17px rgba($color: rgb(0, 0, 0), $alpha: 0.25);
-
     transition: all 0.2s ease;
   }
 }
@@ -483,10 +482,6 @@ body {
   line-height: 124.5%;
   font-weight: 500;
 }
-.topsell__card-place {
-}
-.topsell__card-price {
-}
 
 .topsell__card-duration {
   padding-left: 32px;
@@ -505,3 +500,156 @@ body {
   }
 }
 //*topsell end--------------------
+//*booking start------------------
+.booking {
+  margin-bottom: 185px;
+}
+.booking__container {
+  max-width: 1065px;
+  margin: 0 auto;
+}
+.booking__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking__desc {
+  max-width: 50%;
+}
+.booking__title {
+  margin-bottom: 17px;
+}
+.booking__subtitle {
+  margin-bottom: 32px;
+  text-align: start;
+  max-width: 511px;
+  letter-spacing: 0.01px;
+}
+.booking__step {
+  padding-left: 68px;
+  margin-bottom: 48px;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5e6282;
+}
+.step__title {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.step__text {
+  max-width: 327px;
+  font-weight: 400;
+}
+.first-step {
+  position: relative;
+  &::before {
+    content: url(../img/icons/choose-icon.svg);
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    padding: 13px 11px 9px 13px;
+    background-color: #f0bb1f;
+    border-radius: 13px;
+  }
+}
+.second-step {
+  position: relative;
+  &::before {
+    content: url(../img/icons/swim-icon.svg);
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    padding: 14px 11px 11px 13px;
+    background-color: #f15a2b;
+    border-radius: 13px;
+  }
+}
+.third-step {
+  position: relative;
+  &::before {
+    content: url(../img/icons/taxi-icon.svg);
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    padding: 15px 11px 9px 12px;
+    background-color: #006380;
+    border-radius: 13px;
+  }
+}
+.booking__card {
+  position: relative;
+  margin-right: 65px;
+  padding: 20px 25px 31px 25px;
+  background: #ffffff;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 26px;
+}
+.booking__card-img {
+  margin-bottom: 26px;
+}
+.booking__card-pic {
+}
+.booking__card-title {
+  margin-bottom: 13px;
+  font-weight: 500;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  color: #080809;
+}
+.booking__card-date {
+  margin-bottom: 21px;
+  margin-right: 13px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: -0.005em;
+  color: #84829a;
+  position: relative;
+  // border-right: 1px solid #84829a;
+  &::after {
+    content: "";
+    position: absolute;
+    right: -13px;
+    top: 7px;
+    width: 16px;
+    height: 1px;
+    background-color: #84829a;
+    border: 1px solid #84829a;
+    transform: rotate(90deg);
+  }
+}
+.booking__card-desc {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: -0.005em;
+  color: #84829a;
+}
+.booking__card-quantity {
+  padding-left: 31px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: -0.02em;
+  color: #84829a;
+}
+.booking__card-ongoing {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.ongoing__title {
+}
+.ongoing__route {
+}
+.ongoing__progress {
+}
+//*booking end--------------------
