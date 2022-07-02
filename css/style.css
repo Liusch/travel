@@ -676,6 +676,21 @@ body {
 
 .booking {
   margin-bottom: 185px;
+  position: relative;
+}
+
+.booking__decoration {
+  position: absolute;
+  right: 65px;
+  top: -90px;
+}
+
+.booking__ellipse {
+  fill: #59b1e6;
+  background: #59b1e6;
+  opacity: 0.8;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
 }
 
 .booking__container {
@@ -774,6 +789,7 @@ body {
 
 .booking__card {
   position: relative;
+  margin-top: 17px;
   margin-right: 65px;
   padding: 20px 25px 31px 25px;
   background: #ffffff;
@@ -828,17 +844,121 @@ body {
   color: #84829a;
 }
 
+.booking__card-nav {
+  margin-bottom: 30px;
+}
+
+.booking__card-nav-pic {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.booking__card-nav-link {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 12px 10px 5px 12px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.booking__card-nav-link:hover {
+  background: #aed7e4;
+}
+
 .booking__card-quantity {
-  padding-left: 31px;
+  padding: 0 31px;
   font-weight: 500;
   font-size: 16px;
   line-height: 124.5%;
   letter-spacing: -0.02em;
   color: #84829a;
+  position: relative;
+}
+
+.booking__card-quantity::before {
+  content: url(../img/icons/building-icon.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.booking__card-quantity::after {
+  content: url(../img/icons/heart-icon.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .booking__card-ongoing {
+  padding: 16px 75px 36px 80px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 18px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -112px;
+  bottom: 52px;
+}
+
+.ongoing__title {
+  margin: 0 0 6px 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 124.5%;
+  letter-spacing: -0.035em;
+  color: #84829a;
+}
+
+.ongoing__route {
+  position: relative;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  letter-spacing: -0.015em;
+  color: #080809;
+}
+
+.ongoing__route::before {
+  content: url(../img/temple.png);
+  position: absolute;
+  top: -21px;
+  left: -60px;
+}
+
+.ongoing__progress {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 124.5%;
+  letter-spacing: -0.055em;
+  color: #080809;
+  position: relative;
+}
+
+.ongoing__progress span {
+  color: #8a79df;
+}
+
+.ongoing__progress::before {
+  content: "";
+  width: 156px;
+  height: 5px;
+  background: #f5f5f5;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -14px;
+  left: 2px;
+}
+
+.ongoing__progress::after {
+  content: "";
+  width: calc(156px * 0.4);
+  height: 5px;
+  background: #8a79df;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -14px;
+  left: 2px;
 }
