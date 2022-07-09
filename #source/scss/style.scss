@@ -502,7 +502,7 @@ body {
 //*topsell end--------------------
 //*booking start------------------
 .booking {
-  margin-bottom: 160px;
+  margin-bottom: 150px;
   position: relative;
 }
 .booking__decoration {
@@ -758,7 +758,7 @@ body {
 //*booking end--------------------
 //*reviews start------------------
 .reviews {
-  margin-bottom: 200px;
+  margin-bottom: 53px;
 }
 .reviews__container {
   max-width: 1170px;
@@ -770,6 +770,7 @@ body {
   justify-content: space-between;
 }
 .reviews__titles {
+  padding-top: 10px;
 }
 .reviews__title {
   text-transform: uppercase;
@@ -789,23 +790,57 @@ body {
   height: 400px;
   width: 500px;
 }
-.swiper-wrapper {
-}
-.swiper-slide {
-}
+
 .reviews__card {
+  margin: 37px auto;
   background: #ffffff;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
-    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
-    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
-    0px 20px 13px rgba(0, 0, 0, 0.01),
-    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
-    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02);
   border-radius: 10px;
   width: 504px;
   height: 245px;
   padding: 28px 68px 34px 34px;
+  position: relative;
 }
+.mike-card {
+  &::before {
+    content: "";
+    background-image: url("../img/mike-foto.png");
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    top: -35px;
+    left: -42px;
+  }
+}
+.chris-card {
+  &::before {
+    content: "";
+    background-image: url("../img/anonim.png");
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    top: -35px;
+    left: -42px;
+  }
+}
+.sumire-card {
+  &::before {
+    content: "";
+    background-image: url("../img/sumire-foto.png");
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    top: -35px;
+    left: -42px;
+  }
+}
+
 .reviews__text {
   font-weight: 500;
   font-size: 16px;
@@ -826,21 +861,60 @@ body {
   line-height: 21px;
   color: #5e6282;
 }
-.swiper-pagination {
-}
-.swiper-button-prev,
-.swiper-button-next {
-  position: static;
-}
+// .swiper-pagination {
+// }
+// .swiper-button-prev,
+// .swiper-button-next {
+//   // position: static;
+// }
 .swiper-button-prev::after {
   color: #3e2e4d;
   transform: rotate(90deg);
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -629px;
+  top: -60px;
 }
 .swiper-button-next::after {
   color: #3e2e4d;
   transform: rotate(90deg);
 }
 //*reviews end--------------------
+//*sponsors start-----------------
+.sponsors {
+  margin-bottom: 200px;
+}
+.sponsors__container {
+  max-width: 1073px;
+  margin-left: 186px;
+}
+.sponsors__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  & li:nth-child(2) {
+    margin-left: -18px;
+    margin-top: 1px;
+  }
+  & li:nth-child(3) {
+    margin-left: -5px;
+    margin-top: 0;
+  }
+  & li:nth-child(4) {
+    margin-left: -8px;
+    margin-top: 3px;
+  }
+  & li:nth-child(5) {
+    margin-left: 4px;
+    margin-top: 0;
+  }
+}
+.sponsors__item {
+  filter: grayscale(100%);
+  &:hover,
+  &:active,
+  &:focus {
+    filter: grayscale(0%);
+  }
+}
+//*sponsors end-------------------
