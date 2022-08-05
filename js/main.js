@@ -35,4 +35,5 @@ const swiper = new Swiper('.reviews__slider', {
   menuCloseItem.addEventListener('click', () => {
     menu.classList.remove('header__nav-active');
   });
+  
 }());
