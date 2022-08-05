@@ -1639,6 +1639,7 @@ body {
 @media screen and (max-width: 783px) {
   .header__burger {
     display: block;
+    cursor: pointer;
   }
   .header__nav {
     position: fixed;
@@ -1650,11 +1651,16 @@ body {
     border-radius: 50px;
     z-index: 20;
     transform: translateX(100%);
-  }
-  .header__nav-close {
-    display: block;
+    transition: 0.5s all ease;
   }
 
+  .header__nav-close {
+    display: block;
+    cursor: pointer;
+  }
+  .header__nav-active {
+    transform: translateX(0%);
+  }
   .header__list {
     flex-direction: column;
     justify-content: center;
