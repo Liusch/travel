@@ -1349,6 +1349,12 @@ body {
   .subscribe__container {
     margin-left: 0px;
   }
+  .subscribe__title {
+    margin-bottom: 20px;
+  }
+  .subscribe__mail {
+    margin: 20px;
+  }
   .footer__container {
     justify-content: center;
   }
@@ -1702,5 +1708,191 @@ body {
   .header__language-link {
     color: #59b1e6;
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .decoration {
+    display: none;
+  }
+  .intro__title {
+    margin-bottom: 0px;
+  }
+  .intro__subtitle {
+    font-size: 30px;
+    line-height: 47px;
+  }
+  .intro__image {
+    display: none;
+  }
+  .intro__block {
+    max-width: 100%;
+    background-position: 136px 102px;
+    text-align: center;
+  }
+  .intro__text {
+    margin: 10px auto 30px;
+  }
+  .intro__buttons {
+    justify-content: center;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .subtitle {
+    font-size: 26px;
+  }
+  .category__item-title {
+    margin-bottom: 9px;
+    font-size: 16px;
+  }
+  .category__item-text {
+    font-size: 14px;
+  }
+  .topsell__subtitle {
+    margin-bottom: 0px;
+  }
+  .booking__title {
+    margin-bottom: 0px;
+  }
+  .booking__subtitle {
+    margin-bottom: 10px;
+  }
+  .booking__decoration {
+    right: 0px;
+    top: 181px;
+  }
+  .booking__card-ongoing {
+    right: 0px;
+    bottom: -68px;
+  }
+  .subscribe__block-content {
+    left: 25px;
+  }
+  .subscribe__title {
+    margin: 0 auto 10px;
+    font-size: 20px;
+  }
+
+  .footer__menu-title {
+    font-size: 16px;
+  }
+  .footer__menu-link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 705px) {
+  .reviews__card {
+    width: 250px;
+  }
+  .reviews__text {
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 18px;
+  }
+  .mike-card::before,
+  .chris-card::before,
+  .sumire-card::before {
+    left: 0px;
+  }
+  .subscribe__block-content {
+    left: 0px;
+  }
+  .subscribe__form {
+    flex-direction: column;
+  }
+  .input__mail-field {
+    width: 333px;
+  }
+  .subscribe__btn {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header__logo-image {
+    max-height: 30px;
+  }
+  .header__burger {
+    width: 40px;
+    height: 30px;
+  }
+  .header__nav {
+    width: 55%;
+    height: 65%;
+  }
+  .header__nav-close {
+    width: 40px;
+    height: 30px;
+  }
+  .intro__block {
+    background: none;
+  }
+  .intro__btn-find {
+    font-size: 12px;
+  }
+  .intro__btn-demo {
+    font-size: 12px;
+  }
+  .plus__area,
+  .bottom-area {
+    display: none;
+  }
+  .category__wrapper {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+  .category__block {
+    margin: 35px auto;
+    flex: 1 1 100%;
+  }
+  .topsell__card-desc {
+    padding: 11px 11px 14px 13px;
+    font-size: 12px;
+    line-height: 100%;
+  }
+  .topsell__card-title {
+    margin-bottom: 0px;
+  }
+  .topsell__card-duration {
+    padding-left: 20px;
+    line-height: 100%;
+    font-size: 12px;
+  }
+  .topsell__card {
+    flex: 0 0 54%;
+    margin: 20px;
+  }
+  .sponsors__wrapper {
+    justify-content: center;
+  }
+  .sponsors__wrapper {
+    max-width: 200px;
+  }
+  .sponsors__item {
+    text-align: center;
+    flex: 0 0 100%;
+  }
+  .sponsors__wrapper li:nth-child(2) {
+    margin-top: -20px;
+  }
+  .sponsors__wrapper li:nth-child(3) {
+    margin-left: 0px;
+    margin-top: -30px;
+  }
+  .sponsors__wrapper li:nth-child(4) {
+    margin-left: 0px;
+    margin-top: 2px;
+  }
+  .sponsors__wrapper li:nth-child(5) {
+    margin-left: 0px;
+    margin-top: 63px;
+  }
+  .subscribe__title {
+    line-height: 30px;
+  }
+  .footer__nav ul:nth-child(1) {
+    margin-right: 15px;
+  }
+  .footer__nav ul:nth-child(2) {
+    margin-right: 15px;
   }
 }
